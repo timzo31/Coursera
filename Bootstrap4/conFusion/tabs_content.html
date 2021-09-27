@@ -80,3 +80,124 @@
 		</div>
 	</div>
 </div>
+
+<!-- Tooltip -->
+<div class="col-12 col-sm-3 col-md-3 align-self-center">
+	<a
+		href="#reservation"
+		class="btn-sm btn-warning btn-block nav-link"
+		data-toggle="tooltip"
+		data-html="true"
+		title="Or Call at <br><strong>+852 12345678</strong>"
+		data-placement="bottom"
+		>Reserve Table</a
+	>
+</div>
+
+<!-- Login Modal here -->
+<div id="loginModal" class="modal fade" role="dialog">
+	<div class="modal-dialog modal-lg" role="content">
+			<div class="modal-content">
+					<div class="modal-header">
+							<h4 class="modal-title">Login</h4>
+							<button type="button" class="close" data-dismiss="modal">
+									&times;
+							</button>
+					</div>
+					<div class="modal-body">
+							<form>
+									<div class="form-row">
+											<div class="form-group col-sm-4">
+													<label class="sr-only" for="email"></label>
+													<input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+											</div>
+											<div class="form-group col-sm-4">
+													<label class="sr-only" for="inputPassord"></label>
+													<input type="password" class="form-control" id="inputPassword" name="inputPassword" placeholder="Password">
+											</div>
+											<div class="col-sm-auto">
+													<div class="form-check">
+															<input type="checkbox" class="form-check-input" id="rememberMe" name="rememberMe">
+															<label class="form-check-label" for="rememberMe">Remember Me</label>
+													</div>
+											</div>
+											<div class="form-row">
+													<button type="button" class="btn btn-secondary btn-sm ml-auto">Cancel</button>
+													<button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+											</div>
+									</div>
+							</form>
+					</div>
+
+			</div>
+
+	</div>
+</div>
+
+<!-- Resevation Modal Here-->
+<div id="reservationModal" class="modal fade" role="dialog">
+	<div class="modal-dialog modal-lg" role="content">
+			<div class="modal-content">
+					<div class="modal-header">
+							<h3>Reserve a Table</h3>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+							</button>
+					</div>
+					<div class="modal-body">
+							<form>
+									<div class="form-row">
+											<div class="form-group col-12 col-sm-2">
+													<label for="nb_guest" class="col-form-label">Number of Guests</label>
+											</div>    
+											<div class="form-group form-check-inline col-12 col-sm-9">
+													<input type="radio" class="form-check-input mr-0 ml-2" id="guest1" name="guest">
+													<label for="guest1" class="col-form-label">1</label>
+
+													<input type="radio" class="form-check-input mr-0 ml-2" id="guest2" name="guest">
+													<label for="guest2" class="col-form-label">2</label>
+
+													<input type="radio" class="form-check-input mr-0 ml-2" id="guest3" name="guest">
+													<label for="guest3" class="col-form-label">3</label>
+
+													<input type="radio" class="form-check-input mr-0 ml-2" id="guest4" name="guest">
+													<label for="guest4" class="col-form-label">4</label>
+
+													<input type="radio" class="form-check-input mr-0 ml-2" id="guest5" name="guest">
+													<label for="guest5" class="col-form-label">5</label>
+
+													<input type="radio" class="form-check-input mr-0 ml-2" id="guest6" name="guest">
+													<label for="guest6" class="col-form-label">6</label>
+											</div>
+											
+									</div>
+									<div class="form-row">
+											<div class="form-group col-12 col-sm-2">
+													<label for="section" class="col-form-label">Section</label>
+											<div class="form-group form-check col col-sm-9">
+													<div class="btn-group" role="button">
+															<button type="button" class="btn btn-success" role="button">Non-Smoking</button>
+															<button type="button" class="btn btn-danger" role="button">Smoking</button>
+													</div>
+											</div>
+									</div>
+									<div class="form-row">
+											<div class="form-group">
+													<label for="datetime" class="col-12 col-sm-3 col-form-label">Date and Time</label>
+													<div class="form-group col col-sm-9">
+															<input type="date" id="date" name="date" class="col-12 col-sm-4 form-control">
+															<input type="time" id="time" name="time" class="col-12 col-sm-5 form-control">
+													</div>
+											</div>
+									</div>
+									<div class="form-row">
+											<div class="form-group">
+													<button type="button" class="btn btn-secondary col-12 col-sm-2 form-control">Cancel</button>
+													<button type="button" class="btn btn-primary col-12 col-sm-3 form-control">Reserve</button>
+											</div>
+									</div>
+							</form>
+					</div>
+			</div>
+	</div>
+</div>
