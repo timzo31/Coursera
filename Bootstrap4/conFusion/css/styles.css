@@ -1,0 +1,9 @@
+.modal-header {
+  background-color: #1e057a; }
+  .modal-header .modal-title {
+    color: #fdfdfd; }
+  .modal-header button {
+    color: #c8b6d3; }
+
+.modal-body {
+  background-color: #c8b6d3; }
