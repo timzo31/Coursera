@@ -297,3 +297,22 @@
 				</button>
 			</form>
 		</div>
+
+
+		<!-- JQuery -------------------------------->
+		<script>
+			$(document).ready(function () {
+				// Set the carousel sliding to 2 ms
+				$('#mycarousel').carousel({
+					interval: 2000,
+				});
+				// pause the carousel sliding
+				$('#carousel-pause').click(function () {
+					$('#mycarousel').carousel('pause');
+				});
+				// play the carousel slides
+				$('#carousel-play').click(function () {
+					$('#mycarousel').carousel('cycle');
+				});
+			});
+		</script>
