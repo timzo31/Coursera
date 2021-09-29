@@ -228,6 +228,7 @@
 									<div class="btn-group btn-group-toggle" data-toggle="buttons">
 										<label class="btn btn-success">
 											<input
+												class="active"
 												type="radio"
 												name="optSmokeSection"
 												id="noSmoke"
@@ -397,6 +398,14 @@
 							data-slide="next">
 							<span class="carousel-control-next-icon"></span>
 						</a>
+						<div class="btn-group" id="carouselButton">
+							<button class="btn btn-danger btn-sm" id="carousel-pause">
+								<span class="fa fa-pause"></span>
+							</button>
+							<button class="btn btn-danger btn-sm" id="carousel-play">
+								<span class="fa fa-play"></span>
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -558,5 +567,22 @@
 				$('[data-toggle="tooltip"]').tooltip();
 			});
 		</script> -->
+
+		<script>
+			$(document).ready(function () {
+				// Set the carousel sliding to 2 ms
+				$('#mycarousel').carousel({
+					interval: 2000,
+				});
+				// pause the carousel sliding
+				$('#carousel-pause').click(function () {
+					$('#mycarousel').carousel('pause');
+				});
+				// play the carousel slides
+				$('#carousel-play').click(function () {
+					$('#mycarousel').carousel('cycle');
+				});
+			});
+		</script>
 	</body>
 </html>
