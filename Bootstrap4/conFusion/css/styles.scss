@@ -1,17 +1,16 @@
-$background-dark: #1e057a;
-$background-light: #c8b6d3;
-$lt-white: #fdfdfd;
+$lt-gray: #ddd;
+$background-dark: #512da8;
+$background-floral: floralwhite;
+$background-pale: #d1c4e9;
 
 .modal-header {
 	background-color: $background-dark;
-	.modal-title {
-		color: $lt-white;
-	}
+	color: $background-floral;
 	button {
-		color: $background-light;
+		color: $background-floral;
 	}
 }
 
 .modal-body {
-	background-color: $background-light;
+	background-color: $background-pale;
 }
